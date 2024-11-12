@@ -30,7 +30,7 @@ const HomePage = ({ games }: HomePageProps) => {
     <div>
       <Navbar />
       <HeroSection />
-      <GamesSection games={games} />
+      {/* <GamesSection games={games} /> */}
       <Footer />
     </div>
   );
