@@ -3,6 +3,7 @@ import Navbar from '../components/Navbar';
 import { HeroSection } from "@/app/components/HeroSection";
 import GamesSection from '../components/GamesSection';
 import Footer from '../components/Footer';
+import Countdown from '../components/Countdown';
 import { GetServerSideProps } from 'next';
 
 // Define the type for a single game item, update fields based on your API response
@@ -29,8 +30,8 @@ const HomePage = ({ games }: HomePageProps) => {
   return (
     <div>
       <Navbar />
-      <HeroSection />
-      {/* <GamesSection games={games} /> */}
+      {/* <HeroSection /> */}
+      <GamesSection games={games} />
       <Footer />
     </div>
   );

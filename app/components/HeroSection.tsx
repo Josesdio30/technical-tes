@@ -23,7 +23,7 @@ export function HeroSection() {
   ];
 
   return (
-    <div className="w-full flex justify-center py-10 bg-gray-900">
+    <div className="w-full flex justify-center py-10 ">
       <Carousel
         plugins={[autoplayPlugin.current]}
         className="w-full max-w-3xl"
@@ -34,7 +34,7 @@ export function HeroSection() {
           {images.map((image, index) => (
             <CarouselItem key={index}>
               <div className="p-1">
-                <Card className="bg-gray-800 text-white rounded-lg shadow-lg border-none">
+                <Card className="bg-gray-800 rounded-lg shadow-lg border-none">
                   <CardContent
                     className="flex items-center justify-center w-full h-48 p-6"
                     style={{
@@ -44,7 +44,7 @@ export function HeroSection() {
                       borderRadius: "12px",  // Adding border radius to the image
                     }}
                   >
-                    <span className="text-4xl font-semibold">{index + 1}</span>
+                    {/* <span className="text-4xl font-semibold">{index + 1}</span> */}
                   </CardContent>
                 </Card>
               </div>

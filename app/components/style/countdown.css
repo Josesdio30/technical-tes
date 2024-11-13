@@ -1,0 +1,62 @@
+.countdown {
+  display: flex;
+}
+
+.time-section {
+  margin: 0 10px;
+}
+
+.time-group {
+  display: flex;
+}
+
+.time-segment {
+  width: 50px;
+  height: 100px;
+  background-color: #333;
+  position: relative;
+  margin: 0 5px;
+}
+
+.segment-display {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.segment-display__top,
+.segment-display__bottom {
+  width: 100%;
+  height: 50%;
+  background-color: #222;
+}
+
+.segment-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+.segment-overlay__top,
+.segment-overlay__bottom {
+  width: 100%;
+  height: 50%;
+  background-color: #f1f1f1;
+}
+
+.flip {
+  animation: flip 0.5s forwards;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(180deg);
+  }
+}
