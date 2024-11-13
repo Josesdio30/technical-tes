@@ -119,7 +119,7 @@ const Countdown: React.FC = () => {
             </div>
           </div>
         </div>
-        <p>Hours</p>
+        {/* <p>Hours</p> */}
       </div>
 
       <div className="time-section" id="minutes">
@@ -145,7 +145,7 @@ const Countdown: React.FC = () => {
             </div>
           </div>
         </div>
-        <p>Minutes</p>
+        {/* <p>Minutes</p> */}
       </div>
 
       <div className="time-section" id="seconds">
@@ -171,7 +171,7 @@ const Countdown: React.FC = () => {
             </div>
           </div>
         </div>
-        <p>Seconds</p>
+        {/* <p>Seconds</p> */}
       </div>
     </div>
   );
