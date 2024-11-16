@@ -23,10 +23,10 @@ export function HeroSection() {
   ];
 
   return (
-    <div className="w-full flex justify-center py-10 ">
+    <div className="w-full flex justify-center py-10">
       <Carousel
         plugins={[autoplayPlugin.current]}
-        className="w-full max-w-3xl"
+        className="w-full max-w-full md:max-w-7xl"  // Set max width to full on mobile, 7xl on medium screens and up
         onMouseEnter={autoplayPlugin.current.stop}
         onMouseLeave={autoplayPlugin.current.reset}
       >
@@ -36,12 +36,12 @@ export function HeroSection() {
               <div className="p-1">
                 <Card className="bg-gray-800 rounded-lg shadow-lg border-none">
                   <CardContent
-                    className="flex items-center justify-center w-full h-48 p-6"
+                    className="flex items-center justify-center w-full h-48 md:h-80 p-6"  // Adjust height for mobile (h-48) and larger screens (h-80)
                     style={{
-                      backgroundImage: `url(${image})`, // Set the background image dynamically
+                      backgroundImage: `url(${image})`,
                       backgroundSize: "cover",
                       backgroundPosition: "center",
-                      borderRadius: "12px",  // Adding border radius to the image
+                      borderRadius: "12px",
                     }}
                   >
                     {/* <span className="text-4xl font-semibold">{index + 1}</span> */}

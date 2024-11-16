@@ -9,7 +9,7 @@ interface GameCardProps {
 }
 
 const GameCard = ({ game }: GameCardProps) => (
-  <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg w-64 text-white relative">
+  <div className="bg-gray-900 rounded-lg overflow-hidden shadow-lg w-[24rem] sm:w-64 md:w-96 text-white relative">
     <img src={game.image} alt={game.alt} className="w-full h-32 object-cover" />
     <div className="p-4">
       <h2 className="text-lg font-bold mb-1">{game.name}</h2>
@@ -33,7 +33,7 @@ const GameCard = ({ game }: GameCardProps) => (
         </ul>
       </div> */}
 
-      <a href="#" className="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded mt-4 block text-center">Top Up</a>
+      <a href="/product" className="bg-red-600 hover:bg-blue-700 w-1/4 text-white font-bold py-2 px-4 rounded-3xl mt-4 block text-left">Promo</a>
     </div>
   </div>
 );

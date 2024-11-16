@@ -1,10 +1,11 @@
 // pages/index.tsx
-import Navbar from '../components/Navbar';
-import { HeroSection } from "@/app/components/HeroSection";
-import GamesSection from '../components/GamesSection';
-import Footer from '../components/Footer';
-import Countdown from '../components/Countdown';
+import Navbar from './components/Navbar';
+import { HeroSection } from "@/app/home/components/HeroSection";
+import GamesSection from './components/GamesSection';
+import Footer from './components/Footer';
+import Countdown from './components/Countdown';
 import { GetServerSideProps } from 'next';
+import FavoriteGamesSection from './components/FavoriteGameSection';
 
 // Define the type for a single game item, update fields based on your API response
 type Game = {
@@ -32,6 +33,7 @@ const HomePage = ({ games }: HomePageProps) => {
       <Navbar />
       {/* <HeroSection /> */}
       <GamesSection games={games} />
+      <FavoriteGamesSection/>
       <Footer />
     </div>
   );
